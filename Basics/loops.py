@@ -5,6 +5,7 @@ Loops - Execute same block of code multiple times
 
 1. for loop - Execute a sequence of statements multiple time depending on the condition
 2. while loop - Execute a sequence of statements multiple time depending on the condition till the condition is True
+as soon as the condition becomes false the loop will be terminated.
 
 
 When do we for and while loop
@@ -17,6 +18,19 @@ syntax:
 
 for variable in sequence(list, dictionary, string..., range):
     statement(s)
+
+
+2. while loop: Is a condition based loop
+
+Syntax:
+
+initialise the variable
+while condition :
+    code
+    increase/decrease the value by 1
+
+
+
 
 
 '''
@@ -61,5 +75,37 @@ str = '''This is a python string
 # Exception handling
 
 
+# print 1 to 5
+
+# i = 1
+# while i < 6:   # 2 < 6
+#     i = i + 1
+#     if i == 3:
+#         continue # 3
+#     print(i)
+
+
+i = 1
+while i < 6:
+    i = i+1
+    if i == 3:
+        continue
+    print(i)
+    # i +=1 = i = i+1
+
+attempt = 0
+
+while attempt <= 3:
+    if attempt == 3:
+        print("Your account have been locked")
+    else:
+        print("Please enter correct username or password")
+    attempt = attempt+1
+
+'''
+break - Where ever it appears inside the loop, the loop will be terminated there.
+continue - That particular iteration will get skipped
+
+'''
 
 
