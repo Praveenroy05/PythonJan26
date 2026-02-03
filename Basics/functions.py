@@ -119,6 +119,17 @@ def display(*a):
 display(1)
 display(1,2,3,4,5,7,7,8,8,"TS", 28734689348)
 
+test1 = "Login"
+print(test1)
+
+
+test = ("Login", "logout")
+
+print(type(test))
+
+
+
+
 
 
 
